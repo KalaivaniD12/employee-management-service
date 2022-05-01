@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "9777a9cd-4ce3-4326-af2c-c9b0bbb787db",
+		"name": "EmployeeManagementService",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getEmployee by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/employee/E10001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"employee",
+						"E10001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get department by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/department/D101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"department",
+						"D101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all department by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/department/all/D101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"department",
+						"all",
+						"D101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add employee",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empCode\": \"E10006\",\r\n    \"name\": \"Employee-6\",\r\n    \"salary\": 50000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/employee/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"employee",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8010/health-check",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee-service/v1/health",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee-service",
+						"v1",
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project by project code and depeartment code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/project/P1001/department/D101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"project",
+						"P1001",
+						"department",
+						"D101"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project by project code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/project/P1001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"project",
+						"P1001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get projects by list project code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/project?projCodes=P1001,P1002",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"project"
+					],
+					"query": [
+						{
+							"key": "projCodes",
+							"value": "P1001,P1002"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8010",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add project",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"empCode\": \"E10006\",\r\n    \"name\": \"Employee-6\",\r\n    \"salary\": 50000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/project/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"project",
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get project by project code and depeartment code",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/employee-service/v1/project/P1001/department/D101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"employee-service",
+						"v1",
+						"project",
+						"P1001",
+						"department",
+						"D101"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
