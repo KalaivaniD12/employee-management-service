@@ -1,0 +1,27 @@
+INSERT INTO DEPARTMENT
+	(DEPART_CODE, DEPT_NAME)
+VALUES
+	('D101','DEPT1'),
+	('D102','DEPT2'),
+	('D103','DEPT3'),
+	('D104','DEPT4'),
+	('D105','DEPT5');
+
+
+INSERT INTO DEPARTMENT_PROJECT
+	(PROJ_CODE, DEPART_CODE)
+VALUES
+	('P1001','D101'),
+	('P1001','D102'),
+	('P1002','D103')
+	('P1003','D104')
+	('P1004','D105');
+
+
+INSER INTO PROJECT
+    (PROJ_CODE, PROJECT_NAME)
+VALUES
+    ('P1001', 'Project1'),
+    ('P1002', 'Project2'),
+    ('P1003', 'Project3'),
+    ('P1004', 'Project4');
